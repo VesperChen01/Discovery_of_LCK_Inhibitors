@@ -18,29 +18,38 @@ For a comprehensive assessment of our docking models, we utilized a variety of t
 
 ### AutoDock-GPU
 - **Installation and Usage**: Follow the official guidelines provided by [AutoDock-GPU](https://github.com/ccsb-scripps/AutoDock-GPU).
-- **Execution Scripts**: `adgpu.sh` and `adgpuanalysis.sh` are utilized to run the docking simulations and analyze the results, respectively.
+- **Execution Scripts**: `2_adgpu.sh` and `2_adgpuanalysis.sh` are utilized to run the docking simulations and analyze the results, respectively.
 
 ### AutoDock-Vina
 - **Installation and Usage**: Adhere to the official instructions available at [AutoDock-Vina](https://github.com/ccsb-scripps/AutoDock-Vina).
-- **Execution Script**: `vina.sh` is used for running docking simulations.
+- **Execution Script**: `2_vina.sh` is used for running docking simulations.
 
 ### PLANET
 - **Installation and Usage**: Installation and operation should conform to the instructions on the [PLANET GitHub page](https://github.com/ComputArtCMCG/PLANET/tree/main).
 
 ### LeDock
-- **Installation and Usage**: Guidelines are provided on the [LeDock website](http://www.lephar.com/software.htm). The script `ledock.sh` is employed for docking processes.
+- **Installation and Usage**: Guidelines are provided on the [LeDock website](http://www.lephar.com/software.htm). The script `2_ledock.sh` is employed for docking processes.
 
 ### Schrödinger Glide SP
 - **Installation and Usage**: Follow the official Schrödinger manuals for the 2021-4 version, accessible [here](http://www.lephar.com/software.htm "Schrödinger 2021-4").
 
 *Note: The molecular docking, MD simulation, and structural analysis conducted in this study were facilitated by the high-performance computing cluster platform at the School of Biotechnology, Jiangnan University (Schrodinger2021-4).*
 
-Furthermore, the outcome of our docking validation, including docking scores and related data, is comprehensively documented in the 'Validation_dockingscore.xlsx' file. 
+Furthermore, the outcome of our docking validation, including docking scores and related data, is comprehensively documented in the '2_Validation_dockingscore.xlsx' file. 
 
-In addition to the docking scores analysis, we employed the `AUCROC.py` script for the statistical analysis of our results, specifically for calculating the Area Under the Receiver Operating Characteristic (AUC-ROC) curves and conducting t-tests. This further quantifies the predictive accuracy and statistical significance of our docking model's performance.
+In addition to the docking scores analysis, we employed the `2_AUCROC.py` script for the statistical analysis of our results, specifically for calculating the Area Under the Receiver Operating Characteristic (AUC-ROC) curves and conducting t-tests. This further quantifies the predictive accuracy and statistical significance of our docking model's performance.
 
 
-## Virtual screening
+## Virtual Screening
+
+Our virtual screening workflow leverages the capabilities of PLANET and Schrödinger Glide SP to identify promising molecular candidates. For detailed parameters and methodologies, we refer readers to our manuscript. This section outlines key components of our workflow, including molecule filtration and similarity distribution, and the outcome of our screening process.
+
+### Filtered Molecules and Distribution of Maximum Similarity
+- **Filtered Molecules**: The filtration of molecules was conducted using the `3_filtered_molecules.py` script. This step was crucial for narrowing down our initial set of compounds to those meeting specific physicochemical and structural criteria, ensuring relevance and potential efficacy in subsequent analyses.
+- **Distribution of Maximum Similarity**: To assess the chemical diversity and similarity of our filtered molecules, we utilized the `3_similarity.py` script. This analysis allowed us to understand the distribution of molecular similarities within our dataset, highlighting the range of chemical spaces covered by our candidates.
+
+### Screening Outcomes
+The culmination of our virtual screening process identified the top 474 molecules, which have been documented in the '474_compounds.sdf' file. In addition, the docking scores, which provide a quantitative measure of the binding affinities between these molecules and the target protein, are meticulously detailed in the '3_474_docking_score.csv' file. 
 
 
 
