@@ -66,7 +66,7 @@ Our virtual screening workflow leverages the capabilities of PLANET and Schrödi
 - **Distribution of Maximum Similarity**: To assess the chemical diversity and similarity of our filtered molecules, we utilized the `3_similarity.py` script. This analysis allowed us to understand the distribution of molecular similarities within our dataset, highlighting the range of chemical spaces covered by our candidates.
 
 ### Screening Outcomes
-The culmination of our virtual screening process identified the top 474 molecules, which have been documented in the '474_compounds.sdf' file. In addition, the docking scores, which provide a quantitative measure of the binding affinities between these molecules and the target protein, are meticulously detailed in the '3_474_docking_score.csv' file. 
+The culmination of our virtual screening process identified the top 474 molecules, which have been documented in the `3_474_compounds.sdf` file. In addition, the docking scores, which provide a quantitative measure of the binding affinities between these molecules and the target protein, are meticulously detailed in the `3_474_docking_score.csv` file. 
 
 
 
