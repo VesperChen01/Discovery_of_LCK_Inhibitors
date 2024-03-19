@@ -62,7 +62,7 @@ In addition to the docking scores analysis, we employed the `2_AUCROC.py` script
 Our virtual screening workflow leverages the capabilities of PLANET and Schrödinger Glide SP to identify promising molecular candidates. For detailed parameters and methodologies, we refer readers to our manuscript. This section outlines key components of our workflow, including molecule filtration and similarity distribution, and the outcome of our screening process.
 
 ### Filtered Molecules and Distribution of Maximum Similarity
-- **Filtered Molecules**: The filtration of molecules was conducted using the `3_filtered_molecules.py` script. This step was crucial for narrowing down our initial set of compounds to those meeting specific physicochemical and structural criteria, ensuring relevance and potential efficacy in subsequent analyses.
+- **Filtered Molecules**: The filtration of molecules was conducted using the `3_filtered_molecules.py` script. 
 - **Distribution of Maximum Similarity**: To assess the chemical diversity and similarity of our filtered molecules, we utilized the `3_similarity.py` script. This analysis allowed us to understand the distribution of molecular similarities within our dataset, highlighting the range of chemical spaces covered by our candidates.
 
 ### Screening Outcomes
