@@ -27,7 +27,7 @@ Our study also emphasizes the importance of visual representation in understandi
 - **Purpose**: To visualize the distribution of amino acid residues in various regions of interest across the selected proteins, we employ donut plots. These plots categorize residues into most favoured regions, additional allowed regions, generously allowed regions, and disallowed regions, based on their Ramachandran plot positions.
 - **Visualization**: Each protein is represented by a donut plot, with different colors indicating the distribution percentages of residues in the specified categories. The plots offer an intuitive way to assess the structural integrity and stereochemical quality of the proteins.
 
-Both scripts play a crucial role in our structural analysis, facilitating a deeper understanding of the quality and characteristics of the protein structures under investigation. These visualizations not only aid in the selection process but also provide valuable insights that are critical for model validation and virtual screening.
+*PDB structures and the assessments carried out using PyRAMA and SAVES v6.0, are comprehensively archived in `1_PDB.zip`.* 
 
 ## Docking Model Validation
 
