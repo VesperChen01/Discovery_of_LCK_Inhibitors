@@ -11,7 +11,24 @@ This repository contains key files and data for the article "Discovery of A Nove
 - **Generation of Decoy Compounds and Statistical Analysis**: 
 1. Generation of Decoy Compounds: We leveraged our curated set of 50 active compounds as a blueprint to generate 2,900 decoy compounds using the DUD-E Database ([DUD-E Database](https://dude.docking.org/)). This strategic generation ensures that the decoy compounds, while structurally reminiscent of the active set, exhibit distinct biological activities. This dichotomy is crucial for our validation framework, enhancing the robustness of our comparative study. The resulting datasets, encapsulated in `1_Decoys_smiles_from_DUDE.xlsx` and `1_activate_smiles_fromDUDE_50clustered.xlsx`.
 2. Molecular Property Analysis: To dissect the physicochemical essence of each compound within our dataset, active and decoy alike, we computed their molecular weight and partition coefficient (LogP). These computations were performed using the `Descriptors.MolWt` and `Descriptors.MolLogP` functions from the RDKit library, respectively. This analytical step, executed through the `1_logp.py` script.
-  
+## Visualization of Structural Analysis
+
+Our study also emphasizes the importance of visual representation in understanding the molecular and structural nuances of our selected compounds and proteins. To this end, we utilized two custom Python scripts for generating insightful plots:
+
+### Quality vs. VERIFY Plot
+
+- **Script**: `1_Verify.py`
+- **Purpose**: This script creates a scatter plot comparing the Overall Quality Factor to VERIFY percentages for various protein structures. By plotting these metrics against each other and drawing a trend line, we gain insights into the correlation between structural quality and VERIFY scores. The plot also includes annotations for each structure’s PDB ID, providing a clear, at-a-glance understanding of the dataset's composition.
+- **Visualization**: The resulting plot uses a color gradient to represent VERIFY percentages, enhancing the visual distinction between different structures based on their VERIFY scores.
+
+### Protein Donut Plots
+
+- **Script**: `1_protein_donuts.py`
+- **Purpose**: To visualize the distribution of amino acid residues in various regions of interest across the selected proteins, we employ donut plots. These plots categorize residues into most favoured regions, additional allowed regions, generously allowed regions, and disallowed regions, based on their Ramachandran plot positions.
+- **Visualization**: Each protein is represented by a donut plot, with different colors indicating the distribution percentages of residues in the specified categories. The plots offer an intuitive way to assess the structural integrity and stereochemical quality of the proteins.
+
+Both scripts play a crucial role in our structural analysis, facilitating a deeper understanding of the quality and characteristics of the protein structures under investigation. These visualizations not only aid in the selection process but also provide valuable insights that are critical for model validation and virtual screening.
+
 ## Docking Model Validation
 
 For a comprehensive assessment of our docking models, we utilized a variety of tools, each chosen for its specific strengths in simulating molecular interactions. Detailed parameters and methodologies are elaborated in our manuscript. Below is a summary of the tools used, along with their setup and execution protocols.
