@@ -73,6 +73,23 @@ The culmination of our virtual screening process identified the top 474 molecule
 
 ### MD simulation
 
+#### Script
+- **Name**: Protocol provided by [Thibault Tubiana's protocolGromacs](https://github.com/tubiana/protocolGromacs)
+- **Developed by**: Thibault Tubiana, PhD
+
+#### Purpose
+This script employs an integrated tool developed by Thibault Tubiana, PhD, for conducting Molecular Dynamics (MD) simulations. It provides a convenient and efficient way to set up, run, and analyze MD simulations using GROMACS. We have conducted a simulation lasting 500 nanoseconds, with other specific parameters detailed in the manuscript.
+
+#### Visualization
+- **Output**: The results of the simulation are comprehensively organized and can be found in `4_MDresults.zip`, which includes the time series data and analysis outcomes relevant to the study's objectives.
+
+#### File Management
+- **Key File**: `4_MDresults.zip`
+- **Contents**: Contains all the resultant data and analysis from the 500ns MD simulation, providing insights into the molecular dynamics observed.
+
+#### Additional Notes
+The ease of use and comprehensive feature set of the tool allows for effective simulation and analysis, helping researchers and scientists to efficiently study complex molecular systems. Detailed simulation parameters and setup procedures are outlined in the accompanying manuscript for those interested in replicating or extending the studies.
+
 ### MM/PBSA
 - **Source**: gmx_mmpbsa.bsh git from [Jerkwin's gmxtools](https://github.com/Jerkwin/gmxtools)
 - **Tools**: APBS-3.0.0.Linux available at [APBS GitHub](https://github.com/Electrostatics/apbs)
