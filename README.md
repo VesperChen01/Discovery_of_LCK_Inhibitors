@@ -74,3 +74,11 @@ The culmination of our virtual screening process identified the top 474 molecule
 ### MD simulation
 
 ### MM/PBSA
+- **Source**: gmx_mmpbsa.bsh git from [Jerkwin's gmxtools](https://github.com/Jerkwin/gmxtools)
+- **Tools**: APBS-3.0.0.Linux available at [APBS GitHub](https://github.com/Electrostatics/apbs)
+
+- **Purpose**
+The script `gmx_mmpbsa.bsh` is utilized for calculating MM-PBSA binding energies and performing energy decomposition for GROMACS trajectories. It automates the Molecular Mechanics (MM) calculations and uses the Adaptive Poisson-Boltzmann Solver (APBS) program for the Poisson-Boltzmann Surface Area (PBSA) calculations. This approach extracts necessary atomic parameters such as charges, radii, and Lennard-Jones (LJ) parameters from GROMACS `.tpr` files via the `gmx dump` command, ensuring compatibility across different versions of GROMACS. The script also supports APBS across its versions as long as there's no change in its input file format.
+
+- **File Management**
+The Results File: `4_MMPBSA.zip`
