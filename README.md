@@ -73,14 +73,14 @@ The culmination of our virtual screening process identified the top 474 molecule
 
 ### MD simulation
 
-#### Script
-- **Name**: Protocol provided by [Thibault Tubiana's protocolGromacs](https://github.com/tubiana/protocolGromacs)
-- **Developed by**: Thibault Tubiana, PhD
+- **Script**
+Name: Protocol provided by [Thibault Tubiana's protocolGromacs](https://github.com/tubiana/protocolGromacs)
+Developed by: Thibault Tubiana, PhD
 
-#### Purpose
+- **Purpose**
 This script employs an integrated tool developed by Thibault Tubiana, PhD, for conducting Molecular Dynamics (MD) simulations. It provides a convenient and efficient way to set up, run, and analyze MD simulations using GROMACS. We have conducted a simulation lasting 500 nanoseconds, with other specific parameters detailed in the manuscript.
 
-#### File Management
+- **File Management**
 The Results File: `4_MDresults.zip`
 
 ### MM/PBSA
